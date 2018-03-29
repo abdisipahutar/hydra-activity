@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'OriflameSansRegular';
+    src: url("../fonts/OriflameSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'OriflameSansBold';
+    src: url("../fonts/OriflameSans-Bold.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'OriflameSansBoldOblique';
+    src: url("../fonts/OriflameSans-BoldOblique.ttf") format("opentype");
+}
+
+.oriflame-sans-regular{font-family: OriflameSansRegular;}
+.oriflame-sans-bold{font-family: OriflameSansBold;}
+
+body{overflow-x: hidden;}
+label.error{font-size: 12px;color: red;}
+button{cursor: pointer; margin-top: 10px;}
+button.btn{margin-top: 10px;color: #ffffff;}
+a{color: #000000;}
+a:focus, a:hover, a:visited{
+	color: #000000;
+	outline: none;
+	text-decoration: none;
+}
+a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
+
+.body-wrapper{
+	background: #ffffff;
+	padding-top: 20px;
+}
+
+.header-container{text-align: center;}
+
+.navigation-wrapper {
+	border-bottom: solid 1px;
+	border-bottom: solid 1px;
+    margin-top: 40px;
+    padding-bottom: 2px;
+}
+.navigation-container{
+	text-align: center;
+}
+
+.navigation-item {
+    font-size: 14px;
+}
+
+.navigation-item:before {
+  content : "";
+  position: absolute;
+  right : 0;
+  top: 6px;
+  height  : 40%;
+  width   : 1px;  /* or 100px */
+  border-right:1px solid grey;
+}
+
+.right-border{
+	/*border-right: solid 1px grey;*/
+}
+
+.navigation-item{display: inline-block;}
+
+.content-wrapper{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.footer {
+    padding: 40px 0px;
+    border-top: solid 1px grey;
+}
+
+.footer-text{text-align: center;}
+
+.text-1{
+	font-family: OriflameSansBold;
+	font-size: 24px;
+	text-align: center;
+	color: #87bce6;
+	margin-top: 40px;
+}
+
+.text-2{
+	font-family: OriflameSansRegular;
+	font-size: 16px;
+	text-align: center;
+	color: #000000;
+	margin-top: 15px;
+}
+
+.text-3{
+	font-family: OriflameSansBold;
+	font-size: 38px;
+	text-align: left;
+	color: #87bce6;
+}
+
+
+.text-4{
+	font-family: OriflameSansBold;
+	font-size: 20px;
+	text-align: left;
+	color: #87bce6;
+	margin-top: 15px;
+}
+
+.text-5{
+	font-family: OriflameSansBoldOblique;
+	font-size: 22px;
+	color: #000000;
+}
+
+.text-6{
+	font-family: OriflameSansBoldOblique;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.text-7{
+	font-family: OriflameSansBoldOblique;
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.step-wrapper{margin-top: 40px;}
+
+.step-title-1 {
+    margin-top: 40px;
+    margin-left: -120px;
+}
+
+.left-bar {
+    width: 30%;
+    height: 8px;
+    background: #87bce6;
+    display: inline-block;
+}
+
+.text-left{text-align: left;}
+
+.margin-top-90{margin-top: 90px;}
+
+.step-type-2-wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.blue-bar {
+    height: 8px;
+    width: 100%;
+    background: #87bce6;
+    position: relative;
+}
+
+.step-type-2-title{
+	padding: 5px 22px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-title-3 {
+    margin-left: unset;
+    margin-right: -120px;
+    text-align: right;
+}
+
+.step-text-wrapper{margin-top: 30px;}
+
+.right-text{
+	text-align: right;
+}
+.skin-care-sets-logo{top: -190%;}
+
+.item-wrapper{margin-top: 20px; justify-content: center;}
+
+.item-container{
+	border: solid 1px #87bce6;
+    display: inline-table;
+    margin-right: 32px;
+    width: 20%;
+    padding: 40px 40px 15px 40px;
+    position: relative;
+}
+
+.even-container{margin-top: 20px;}
+
+.item-container:hover > .item-container-hover{
+	opacity:0.8;
+  	transition:opacity 0.5s linear;
+}
+
+.item-container-hover{
+	/*visibility: hidden;*/
+	overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #87bce6;
+    opacity: 0;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+button:visited, button:hover, button:active {outline: none;}
+
+.btn-info-lengkap{
+	padding-left: 5px;
+	color: #ffffff;
+	border: solid 1px #ffffff;
+	border-radius: 10px;
+	margin-top: 15px;
+	background: transparent;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: OriflameSansRegular;
+}
+
+.optimals-logo{top: -4px;}

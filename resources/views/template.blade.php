@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hail Hydra</title>
+		<title>Oriflame 4 Steps Skin Care Routine</title>
 	  	<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	    <meta name="title" content="Hydra">

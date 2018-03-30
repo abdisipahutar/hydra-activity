@@ -77,7 +77,7 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
 
 .text-1{
 	font-family: OriflameSansBold;
-	font-size: 24px;
+	font-size: 28px;
 	text-align: center;
 	color: #87bce6;
 	margin-top: 40px;
@@ -125,6 +125,31 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
 	color: #ffffff;
 	margin-top: 20px;
 }
+
+.text-8{
+	font-family: OriflameSansBold;
+	font-size: 26px;
+	color: #000000;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.text-9{
+	font-family: OriflameSansRegular;
+	font-size: 12px;
+	color: #000000;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.text-10{
+	font-family: OriflameSansBoldOblique;
+	font-size: 200px;
+	color: #000000;
+	margin-top: 20px;
+}
+
+.text-right{text-align: right;}
 
 .step-wrapper{margin-top: 40px;}
 
@@ -227,3 +252,79 @@ button:visited, button:hover, button:active {outline: none;}
 }
 
 .optimals-logo{top: -4px;}
+
+.modal-detail-product{
+	width: 100%;
+}
+
+.modal-detail-product > .modal-dialog{
+	max-width: 60%;
+}
+
+.modal-detail-product .modal-content{border: solid 1px #000000;}
+
+.modal-detail-product .modal-body{padding: 0px; padding-bottom: 30px;}
+
+.modal-detail-product .close{text-align: right; padding-right: 15px;}
+
+.modal-detail-product .product-detail-image{}
+
+.modal-detail-product .content-text-wrapper{
+	margin-top: 40px;
+	border-top: solid 1px #000000;
+}
+
+.ul-left{text-align: left;}
+
+.boomerang-step{display: inline-block;}
+
+.inline-midle{display: inline-block; vertical-align: middle;}
+.step-min-margin{margin-top: -80px;}
+.step-min-half-margin{margin-top: -40px;}
+
+.video-container video {
+  pointer-events: none;
+  width: 100.5%;
+}
+
+.video-container{padding: 0px;border: none;margin-right: 15px;}
+
+.soc-med-link{color: #87bce6!important;}
+
+.blue-backgroud{
+	background-color: #87bce6;
+    padding: 20px 0px;
+    margin-top: -20px;
+}
+.white-color{color: #ffffff;}
+
+.ig-post .item-container{border: solid 1px #000000;width: 23%;}
+
+.ig-post-text-wrapper{padding: 0px 8px 8px 8px;}
+
+img.avatar-ig-post {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.poster-wrapper {
+    margin-top: 10px;
+}
+
+.avatar-ig-post, .poster-text-wrapper{
+	display: inline-block;
+	font-family: OriflameSansRegular;
+	font-size: 10px;
+}
+
+.ig-post-wrapper{
+	margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+img.love-icon {
+    display: inline-block;
+    width: 15px;
+}
+
+.video-container .video-container img{widows: 100.5%;}

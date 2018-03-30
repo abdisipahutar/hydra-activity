@@ -21,7 +21,18 @@
 						<td>{{ $row->user_name }}</td>
 						<td><img width='150px' src="{{ $row->user_photo }}"></td>
 						<td>{{ $row->taken_at }}</td>
-						<td><img width='200px' src="{{ $row->images }}"></td>
+						@if(!$row->is_video)
+							<td><img width='200px' src="{{ $row->images }}"></td>
+						@elseif($row->is_video)
+							<td>
+								<div class="video-container">
+									<video controls autoplay loop>
+									  <source width="100%;" src="{{ $row->images }}" type="video/mp4">
+									  Your browser does not support the video tag.
+									</video>
+								</div>
+							</td>
+						@endif
 						<td>{{ $row->caption }}</td>
 						<td>{{ $row->likes }}</td>
 						<?php if($row->is_approved == 'PENDING'){ ?>

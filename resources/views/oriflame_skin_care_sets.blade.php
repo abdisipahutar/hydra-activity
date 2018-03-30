@@ -22,7 +22,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="text-2">NovAge true perfection</div>
 			<div class="item-container-hover">
 				<div class="text-6">Kulit Tampak Cantik Berkilau Merawat Tanda-Tanda Penuaan</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal1">INFO LENGKAP</button>
 			</div>
 		</div>
 		<div class="item-container even-container">
@@ -30,7 +30,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="text-2">NovAge Bright Sublime</div>
 			<div class="item-container-hover">
 				<div class="text-6">Perawatan Yang Menjaga Sepanjang Waktu</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal2">INFO LENGKAP</button>
 			</div>
 		</div>
 		<div class="item-container">
@@ -39,7 +39,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="item-container-hover">
 				<div class="text-6">Samarkan Garis Hingga Halus Dan Kerut*</div>
 				<div class="text-7">*Uji konsumen pada 70 perempuan</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal3">INFO LENGKAP</button>
 			</div>
 		</div>
 		<div class="item-container even-container">
@@ -48,7 +48,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="item-container-hover">
 				<div class="text-6">Kulit Lebih Kencang Dalam 4 Minggu Teruji Klinis*</div>
 				<div class="text-7">*Uji klinis menggunakan krim pagi dan krim malam</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal4">INFO LENGKAP</button>
 			</div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="text-2">Optimals Even Out</div>
 			<div class="item-container-hover">
 				<div class="text-6">Awal Cerah Untuk Kulit Anda</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal5">INFO LENGKAP</button>
 			</div>
 		</div>
 		<div class="item-container" style="display: inline-block;">
@@ -74,7 +74,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			<div class="text-2">Optimlas Hydra Radiance</div>
 			<div class="item-container-hover">
 				<div class="text-6">Kulit Terhidrasi Tampak Berseri Alami</div>
-				<button class="btn-info-lengkap">INFO LENGKAP</button>
+				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal6">INFO LENGKAP</button>
 			</div>
 		</div>
 	</div>

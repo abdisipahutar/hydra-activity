@@ -23,6 +23,7 @@ class StaticPageController extends BaseController{
 	}
 
 	public function get4StepXBoomerangChallenger(Request $request){
+		$data['posts'] = InstagramPost::where('is_approved', '=', 'APPROVED')->get();
 		$data['page'] = '4_steps_x_boomerang_challenger';
 		return view('4_steps_x_boomerang_challenger', $data);
 	}

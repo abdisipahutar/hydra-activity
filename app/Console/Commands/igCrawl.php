@@ -71,8 +71,14 @@ class igCrawl extends Command
                 $byPost['user_name'] = $byCode['graphql']['shortcode_media']['owner']['username'];
                 $byPost['taken_at'] = $byCode['graphql']['shortcode_media']['taken_at_timestamp'];
                 $byPost['taken_at'] = date("Y-m-d H:i:s", substr($byPost['taken_at'], 0, 10));
+                if($node['is_video']){
+                    $byPost['img_url'] = $byCode['graphql']['shortcode_media']['video_url'];
+                }
+                else{
+                    $byPost['img_url'] = $byCode['graphql']['shortcode_media']['display_url'];
+                }
 
-                $existPost = InstagramPost::find($node['shortcode']);
+                $existPost = InstagramPost::where('code', '=', ($node['shortcode']))->first();
 
                 if($existPost){
                     self::updateIgPost($existPost, $byPost,$node);
@@ -107,7 +113,7 @@ class igCrawl extends Command
         $existPost->taken_at = $byPost['taken_at'];
         $existPost->is_video = $node['is_video'];
         $existPost->likes = $node['edge_liked_by']['count'];
-        $existPost->images = $node['display_url'];
+        $existPost->images = $byPost['img_url'];
         $existPost->caption = $node['edge_media_to_caption']['edges'][0]['node']['text'];
         $existPost->updated_datetime = date('Y-m-d H:i:s');
 
@@ -116,6 +122,7 @@ class igCrawl extends Command
 
     static function saveIgPost($node, $byPost){
         $instagramPost = new InstagramPost();
+        
         $status = $instagramPost->fill([
             'code' => $node['shortcode'],
             'owner' => $node['owner']['id'],
@@ -124,7 +131,7 @@ class igCrawl extends Command
             'taken_at' => $byPost['taken_at'],
             'is_video' => $node['is_video'],
             'likes' => $node['edge_liked_by']['count'],
-            'images' => $node['display_url'],
+            'images' => $img = $byPost['img_url'],
             'is_approved' => 'PENDING',
             'caption' => $node['edge_media_to_caption']['edges'][0]['node']['text'],
             'created_datetime' => date('Y-m-d H:i:s'),

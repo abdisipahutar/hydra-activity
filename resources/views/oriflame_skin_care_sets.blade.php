@@ -1,22 +1,22 @@
 @extends('template')
 
 @section('content')
-	<div class="col-md-8 offset-2 text-1">ORIFLAME SKIN CARE SETS</div>
-	<div class="row col-md-10 offset-1 step-wrapper"  style="margin-top: 110px;padding-bottom: 15px;">
+	<div class="col-md-8 col-md-offset-2 text-1 skin-care-sets-title">ORIFLAME SKIN CARE SETS</div>
+	<div class="row col-md-10 col-md-offset-1 step-wrapper"  style="margin-top: 110px;padding-bottom: 15px;">
 		<div class="blue-bar" style="height: 2px;"></div>
 		<div class="step-type-2-title skin-care-sets-logo"><img width="100%" src="{{ asset('img/Novage-logo.png') }}"></div>
 	</div>
-	<div class="col-md-8 offset-2 text-1">TEROBOSAN SAINS DALAM ANTI-AGEING</div>
+	<div class="col-md-8 col-md-offset-2 text-1">TEROBOSAN SAINS DALAM ANTI-AGEING</div>
 	<div class="col-md-12 step-text-wrapper">
 		<div class="text-2">Kulit punya cerita berbeda dari usia. Itu sebabnya NovAge–perawatan kulit anti-ageing advanced performing kami–tidak khawatir dengan usia Anda, karena yang penting
 adalah bagaimana Anda merawatnya. NovAge berfokus langsung pada tanda-tanda penuaan kulit spesifik melalui rangkaian dan rutinitas yang tepat.
 Setiap rangkaian didorong oleh ilmu pengetahuan yang inovatif, didukung oleh teknologi canggih phytoCELL, dan terbukti oleh studi klinis menyeluruh.
 Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaan kulit, dan tampil semuda jiwa Anda.</div>
 	</div>
-	<div class="col-md-8 offset-2 step-text-wrapper">
+	<div class="col-md-8 col-md-offset-2 step-text-wrapper">
 		<div class="text-5"><center>BUKAN PERKARA USIA – NAMUN BAGAIMANA ANDA MEMBAWAKANNYA</center></div>
 	</div>
-	<div class="row item-wrapper">
+	<div class="item-wrapper">
 		<div class="item-container">
 			<img width="100%" src="{{ asset('img/NovAge-Bright-Sublime.jpg') }}">
 			<div class="text-2">NovAge true perfection</div>
@@ -52,11 +52,11 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 			</div>
 		</div>
 	</div>
-	<div class="row col-md-10 offset-1 step-wrapper"  style="margin-top: 110px;padding-bottom: 15px;">
+	<div class="row col-md-10 col-md-offset-1 step-wrapper"  style="margin-top: 110px;padding-bottom: 15px;">
 		<div class="blue-bar" style="height: 2px;"></div>
 		<div class="step-type-2-title skin-care-sets-logo optimals-logo"><img width="100%" src="{{ asset('img/Optimals-logo.png') }}"></div>
 	</div>
-	<div class="col-md-8 offset-2 text-1">AWAL SEGAR UNTUK KULIT ANDA</div>
+	<div class="col-md-8 col-md-offset-2 text-1">AWAL SEGAR UNTUK KULIT ANDA</div>
 	<div class="col-md-12 step-text-wrapper">
 		<div class="text-2">Salah satu masalah kulit yang dapat dialami orang yang tinggal di iklim tropis adalah dehidrasi. Meskipun terdengar sederhana, namun dehidrasi kulit dapat menjadi kompleks jika diabaikan dan tidak ditangani dengan tepat.</div>
 	</div>

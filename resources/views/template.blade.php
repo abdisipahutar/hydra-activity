@@ -7,11 +7,13 @@
 	    <meta name="title" content="Hydra">
 
 	    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-	    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+	    <!-- <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> -->
+	    <link href="{{ asset('css/bootstrap3.min.css') }}" rel="stylesheet">
 	    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     	<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-    	<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    	<!-- <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script> -->
+    	<script src="{{ asset('js/bootstrap3.min.js') }}"></script>
     	<script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 		<script src="{{ asset('js/bootstrap-notify.min.js') }}"></script>
 
@@ -20,10 +22,23 @@
 	<body>
 		<container>
 			<div class="body-wrapper">
-				<div class="col-md-12">
+				<div class="col-md-12 web">
 					<div class="header-container"><img src="{{ asset('img/Logo.png') }}"></div>
 				</div>
-				<div class="col-md-12 navigation-wrapper">
+				<div class="col-sm-12 mobile">
+					<div class="header-container">
+						<img width="40%;" src="{{ asset('img/logo-mobile.png') }}">
+						<img class="hamburger-img" src="{{ asset('img/burger-menu.png') }}" >
+					</div>
+				</div>
+				<div class="mobile-menu-container mobile">
+					<div class="col-md-12" id="close-menu">X</div>
+					<a href="/"><div class="col-sm-12 item-menu">4 STEP SKIN ROUTINE</div></a>
+					<a href="/skin-care-sets"><div class="col-sm-12 item-menu">ORIFLAME SKIN CARE SETS</div></a>
+					<a href="/4-steps-x-boomerang"><div class="col-sm-12 item-menu">4STEPSXBOOMERANG</div></a>
+					<a href="/4-steps-x-boomerang-challenger"><div class="col-sm-12 item-menu" style="border-bottom: none;">4STEPSXBOOMERANG CHALLENGERS</div></a>
+				</div>
+				<div class="col-md-12 navigation-wrapper web">
 					<div class="row navigation-container">
 						<div class="col-md-3 navigation-item right-border oriflame-sans-regular">
 							<a class="navigation-link" href="/">4 STEP SKIN ROUTINE</a>
@@ -51,5 +66,16 @@
 			</div>
 		</container>
 	</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.hamburger-img').click(function(){
+			$('.mobile-menu-container').show();
+		});
+		$('#close-menu').click(function(){
+			$('.mobile-menu-container').hide();
+		});
+	});
+</script>
 
 </html>

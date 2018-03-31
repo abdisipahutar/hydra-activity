@@ -11,6 +11,9 @@
     src: url("../fonts/OriflameSans-BoldOblique.ttf") format("opentype");
 }
 
+.web{display: block;}
+.mobile{display: none;}
+
 .oriflame-sans-regular{font-family: OriflameSansRegular;}
 .oriflame-sans-bold{font-family: OriflameSansBold;}
 
@@ -66,11 +69,16 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
 .content-wrapper{
 	padding-top: 30px;
 	padding-bottom: 50px;
+	display: inline-block;
+	width: 100%;
 }
 
 .footer {
     padding: 40px 0px;
     border-top: solid 1px grey;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .footer-text{text-align: center;}
@@ -80,7 +88,7 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
 	font-size: 28px;
 	text-align: center;
 	color: #87bce6;
-	margin-top: 40px;
+	margin-top: 10px;
 }
 
 .text-2{
@@ -173,6 +181,7 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
     width: 100%;
     position: relative;
     margin-top: 30px;
+    display: inline-block;
 }
 
 .blue-bar {
@@ -197,25 +206,31 @@ a.navigation-link:hover{font-family: OriflameSansBold;font-weight: bold;}
     text-align: right;
 }
 
-.step-text-wrapper{margin-top: 30px;}
+.step-text-wrapper{margin-top: 30px;display: inline-block;}
 
 .right-text{
 	text-align: right;
 }
 .skin-care-sets-logo{top: -190%;}
 
-.item-wrapper{margin-top: 20px; justify-content: center;}
+.item-wrapper{
+	margin-top: 20px;
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
 
 .item-container{
 	border: solid 1px #87bce6;
-    display: inline-table;
+    display: inline-block;
     margin-right: 32px;
     width: 20%;
     padding: 40px 40px 15px 40px;
     position: relative;
 }
 
-.even-container{margin-top: 20px;}
+.even-container{padding-top: 20px;}
 
 .item-container:hover > .item-container-hover{
 	opacity:0.8;
@@ -259,35 +274,47 @@ button:visited, button:hover, button:active {outline: none;}
 
 .modal-detail-product > .modal-dialog{
 	max-width: 60%;
+	margin: 0 auto;
 }
 
 .modal-detail-product .modal-content{border: solid 1px #000000;}
 
 .modal-detail-product .modal-body{padding: 0px; padding-bottom: 30px;}
 
-.modal-detail-product .close{text-align: right; padding-right: 15px;}
+.modal-detail-product .close{text-align: right; padding-right: 15px;z-index: 999;}
 
 .modal-detail-product .product-detail-image{}
 
 .modal-detail-product .content-text-wrapper{
 	margin-top: 40px;
 	border-top: solid 1px #000000;
+	display: inline-block;
 }
 
 .ul-left{text-align: left;}
 
-.boomerang-step{display: inline-block;}
+.boomerang-step{
+	display: inline-block;
+	margin-bottom: 55px;
+    margin-top: 50px;
+}
 
 .inline-midle{display: inline-block; vertical-align: middle;}
-.step-min-margin{margin-top: -80px;}
+.step-min-margin{margin-top: -100px;}
 .step-min-half-margin{margin-top: -40px;}
 
 .video-container video {
   pointer-events: none;
   width: 100.5%;
+
 }
 
-.video-container{padding: 0px;border: none;margin-right: 15px;}
+.video-container{
+	padding: 0px;
+	border: none;
+	margin-right: 3px;
+    margin-left: 3px;
+}
 
 .soc-med-link{color: #87bce6!important;}
 
@@ -298,7 +325,12 @@ button:visited, button:hover, button:active {outline: none;}
 }
 .white-color{color: #ffffff;}
 
-.ig-post .item-container{border: solid 1px #000000;width: 23%;}
+.ig-post .item-container{
+	border: solid 1px #000000;
+	width: 21%;
+	display: inline-block;
+    vertical-align: top;
+}
 
 .ig-post-text-wrapper{padding: 0px 8px 8px 8px;}
 
@@ -319,7 +351,7 @@ img.avatar-ig-post {
 
 .ig-post-wrapper{
 	margin-top: 30px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 img.love-icon {
@@ -327,4 +359,192 @@ img.love-icon {
     width: 15px;
 }
 
-.video-container .video-container img{widows: 100.5%;}
+.video-container .video-container img{
+	width: 100.5%;
+}
+
+.modal-detail-product .modal-content {
+    display: inline-block;
+}
+
+.step-5{margin-top: -40px;}
+
+.break-post{margin-top: 5px; margin-bottom: 5px;}
+
+.ig-post-text-wrapper .text-2{
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.modal-footer button.btn{color: #000;}
+
+
+@media screen and (max-width: 1000px){
+	.row{margin-left: 0px; margin-right: 0px;}
+	.web{display: none;}
+	.mobile{display: block;}
+
+	.text-1{font-size: 55px;}
+	.text-2{font-size: 30px;}
+	.text-3{font-size: 50px;}
+	.text-4{font-size: 40px;text-align: center;}
+	.text-5{font-size: 32px;}
+	.text-6{font-size: 40px;}
+	.text-7{font-size: 26px;}
+	.text-8{font-size: 50px;}
+	.text-10{font-size: 250px;}
+
+	.footer-text{font-size: 25px;}
+
+	.header-container{
+		margin-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: solid 2px;
+		position: relative;
+	}
+
+	img.hamburger-img {
+	    width: 7%;
+	    position: absolute;
+	    top: 5px;
+	    left: 0;
+	}
+
+	.modal.show .modal-dialog{
+		max-width: 88%;
+		margin: 50px auto;
+	}
+
+	.mobile-menu-container {
+        position: fixed;
+	    top: 40px;
+	    width: 95%;
+	    background: #ffffff;
+	    padding: 30px;
+	    z-index: 99;
+	    box-shadow: 5px 20px 41px 7px #8888;
+	    display: none;
+	}
+
+	.mobile-menu-container .item-menu{
+		border-bottom: solid 1px #000000;
+		font-family: OriflameSansRegular;
+		font-size: 43px;
+		padding: 20px 0px;
+	}
+	#close-menu{
+		text-align: right;
+		font-size: 45px; 
+	}
+
+	.step-title-mobile-conteiner.mobile {
+	    margin-top: 70px;
+	    position: relative;
+	    display: inline-block;
+	    width: 100%;
+	    margin-bottom: 55px;
+	}
+
+	.step-title-mobile-conteiner .blue-bar{
+		display: inline-block;
+		widows: 100%;
+		background-color: color: #87bce6;
+		height: 8px;
+	}
+
+	.step-title-text {
+	    background: #fff;
+	    padding: 5px 15px;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	.item-container {
+	    width: 45%;
+	    display: inline-block;
+	    margin-top: 20px;
+	    margin-right: 10px;
+	    margin-left: 10px;
+	}
+
+	.skin-care-sets-title{
+		display: inline-block;
+    	width: 100%;
+	}
+
+	.btn-info-lengkap {
+	    font-size: 36px;
+	    margin-top: 26px;
+	    padding: 15px;
+	}
+
+	.modal-detail-product > .modal-dialog {
+		width: 95%;
+		max-width: 100%;
+	}
+
+	.modal-detail-product .modal-body {
+	    padding-top: 58px;
+	}
+
+	.modal-detail-product .close{
+		font-size: 85px;
+	    position: absolute;
+	    right: 0;
+	    top: -20px;
+	}
+
+	.modal{top: 55px;}
+
+	.step-3-tit-mobile{
+		margin-top: -28px;
+    	margin-right: 28px;
+    }
+
+    .step-5 .col-md-9.col-xs-9.text-2.text-left.inline-midle {
+	    margin-left: 48px;
+	    margin-top: 52px;
+	}
+
+	.ig-post .item-container {
+	    width: 100%;
+	}
+
+	.ig-post .item-container{
+		border: none;
+	}
+
+	.stepschallenger-title{font-size: 44px;}
+
+	.ig-post-text-wrapper .text-2 {
+		font-size: 42px;
+	}
+
+	.poster-wrapper {
+	    border-top: solid 1px;
+	    text-align: left;
+	    padding-top: 25px;
+	    margin-top: 21px;
+	}
+
+	img.avatar-ig-post {
+	    width: 150px;
+	    margin-right: 20px;
+	}
+
+	.avatar-ig-post, .poster-text-wrapper {
+	    font-size: 30px;
+	}
+
+	img.love-icon {width: 42px;}
+
+	.ig-post .item-container.video-container {
+	    border-bottom: solid 50px #87bce6;
+	    padding-bottom: 14px;
+	    margin-bottom: 40px;
+	}
+}

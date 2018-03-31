@@ -10,20 +10,21 @@
 	// exit;
 	?>
 
-	<div class="col-md-8 offset-2 text-1">#4STEPSXBOOMERANGCHALLENGERS</div>
+	<div class="col-md-8 col-md-offset-2 text-1 stepschallenger-title">#4STEPSXBOOMERANGCHALLENGERS</div>
 	<div class="step-text-wrapper ig-post-wrapper">
-		<div class="row item-wrapper ig-post">
+		<div class="item-wrapper ig-post">
 			<?php
 				$i = 1;
+				$break = 0;
 				foreach ($posts as $post) { ?>
-					<div class="item-container video-container {{$i%2==0 ? 'even-container' : ''}}">
+					<div class="item-container video-container {{$i%2==0 ? '' : ''}}">
 						@if($post->is_video)
 							<video controls="" autoplay="" loop="">
 							  <source width="100%;" src="{{$post->images}}" type="video/mp4">
 							  Your browser does not support the video tag.
 							</video>
 						@elseif(!$post->is_video)
-							<img width="100.5%;" src="{{$post->images}}">
+							<img width="100%;" src="{{$post->images}}">
 						@endif
 						<div class="ig-post-text-wrapper">
 							<div class="text-2 text-left">
@@ -40,7 +41,11 @@
 						</div>
 					</div>
 					
-			<?php $i++; } ?>
+			<?php
+			$i++;
+			$break++;
+				if($break == 4){echo ("<div class='break-post'></div>");$break=0;}
+			} ?>
 		</div>
 	</div>
 

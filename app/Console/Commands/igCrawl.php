@@ -38,7 +38,7 @@ class igCrawl extends Command
      */
     public function handle()
     {   
-        $tempData = self::crawl_tags('abxilsp1739jswnxlsm1');
+        $tempData = self::crawl_tags('4stepsXBoomerang');
     }
 
 

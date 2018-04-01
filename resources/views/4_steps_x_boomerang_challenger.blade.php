@@ -33,7 +33,7 @@
 							<div class="poster-wrapper">
 								<img class="avatar-ig-post" src="{{$post->user_photo}}">
 								<div class="poster-text-wrapper">
-									by <span style="color: #87bce6;">{{$post->user_name}}</span> onto Instagram <img class="love-icon" width="100%;" src="{{ asset('img/love.png') }}"> {{$post->likes}}
+								by <span style="color: #87bce6;">{{$post->user_name}}</span> onto Instagram <img class="love-icon" width="100%;" src="{{ asset('img/two-hearts-oriflame.png') }}"> {{$post->likes}}
 									<br>
 									<?php echo(date("F j, Y, g:i a", strtotime($post->taken_at))); ?>
 								</div>

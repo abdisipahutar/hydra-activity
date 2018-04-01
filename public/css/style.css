@@ -347,6 +347,7 @@ img.avatar-ig-post {
 	display: inline-block;
 	font-family: OriflameSansRegular;
 	font-size: 10px;
+	text-align: left;
 }
 
 .ig-post-wrapper{
@@ -379,6 +380,7 @@ img.love-icon {
 }
 
 .modal-footer button.btn{color: #000;}
+
 
 
 @media screen and (max-width: 1000px){

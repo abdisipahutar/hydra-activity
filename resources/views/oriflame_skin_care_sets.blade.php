@@ -8,7 +8,7 @@
 	</div>
 	<div class="col-md-8 col-md-offset-2 text-1">TEROBOSAN SAINS DALAM ANTI-AGEING</div>
 	<div class="col-md-12 step-text-wrapper">
-		<div class="text-2">Kulit punya cerita berbeda dari usia. Itu sebabnya NovAge–perawatan kulit anti-ageing advanced performing kami–tidak khawatir dengan usia Anda, karena yang penting
+		<div class="text-2">Kulit punya cerita berbeda dari usia. Itu sebabnya NovAge–perawatan kulit ANTI-AGEING advanced performing kami–tidak khawatir dengan usia Anda, karena yang penting
 adalah bagaimana Anda merawatnya. NovAge berfokus langsung pada tanda-tanda penuaan kulit spesifik melalui rangkaian dan rutinitas yang tepat.
 Setiap rangkaian didorong oleh ilmu pengetahuan yang inovatif, didukung oleh teknologi canggih phytoCELL, dan terbukti oleh studi klinis menyeluruh.
 Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaan kulit, dan tampil semuda jiwa Anda.</div>
@@ -19,7 +19,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 	<div class="item-wrapper">
 		<div class="item-container">
 			<img width="100%" src="{{ asset('img/NovAge-Bright-Sublime.jpg') }}">
-			<div class="text-2">NovAge true perfection</div>
+			<div class="text-2">NovAge True Perfection</div>
 			<div class="item-container-hover">
 				<div class="text-6">Kulit Tampak Cantik Berkilau Merawat Tanda-Tanda Penuaan</div>
 				<button class="btn-info-lengkap" data-toggle="modal" data-target="#modal1">INFO LENGKAP</button>
@@ -35,7 +35,7 @@ Jangan biarkan kulit mendikte usia Anda. Tampilkan kembali tanda-tanda keremajaa
 		</div>
 		<div class="item-container">
 			<img width="100%" src="{{ asset('img/NovAge-True-Perfection.jpg') }}">
-			<div class="text-2">NovAge ecollagen</div>
+			<div class="text-2">NovAge Ecollagen</div>
 			<div class="item-container-hover">
 				<div class="text-6">Samarkan Garis Hingga Halus Dan Kerut*</div>
 				<div class="text-7">*Uji konsumen pada 70 perempuan</div>

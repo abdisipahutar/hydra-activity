@@ -17,7 +17,7 @@ class IgCrawController extends BaseController{
 
 	public function getPostToAdm(Request $request){
 
-		$elq = InstagramPost::where('is_approved', '=', $request->status);
+		$elq = InstagramPost::where('is_approved', '=', $request->status)->orderBy('taken_at', 'desc');
 
 		$data['data'] = $elq->paginate(10);
 
@@ -29,7 +29,7 @@ class IgCrawController extends BaseController{
 		$action = $request->action;
 		$code = $request->code;
 
-		$igPost = InstagramPost::where('code', '=', $code)->first();	
+		$igPost = InstagramPost::where('code', '=', $code)->first();
 		$igPost->is_approved = $action;
 
 		$ret['status'] = $igPost->save();

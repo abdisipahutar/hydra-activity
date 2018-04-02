@@ -54,46 +54,76 @@ class igCrawl extends Command
                 $posts = $current['graphql']['hashtag']['edge_hashtag_to_top_posts']['edges'];    
             }
 
-        $i = 1;
-        foreach ($posts as $nodes) {
-            foreach ($nodes as $node) {
-                // echo "Post ".$i."\n";
-                // echo "code : ".$node['shortcode']."\n";
-                // echo "owner : ".$node['owner']['id']."\n";
-                // echo "is_video : ".$node['is_video']."\n";
-                // echo "likes -> ".$node['edge_liked_by']['count']."\n";
-                // echo "image -> ".$node['display_url']."\n";
-                // echo "caption -> ".$node['edge_media_to_caption']['edges'][0]['node']['text']."\n";
+            $i = 1;
+            foreach ($posts as $nodes) {
+                foreach ($nodes as $node) {
+                    // echo "Post ".$i."\n";
+                    // echo "code : ".$node['shortcode']."\n";
+                    // echo "owner : ".$node['owner']['id']."\n";
+                    // echo "is_video : ".$node['is_video']."\n";
+                    // echo "likes -> ".$node['edge_liked_by']['count']."\n";
+                    // echo "image -> ".$node['display_url']."\n";
+                    // echo "caption -> ".$node['edge_media_to_caption']['edges'][0]['node']['text']."\n";
 
-                $byCode = self::fetch_instagram_post($node['shortcode']);
+                    $byCode = self::fetch_instagram_post($node['shortcode']);
 
-                $byPost['user_photo'] = $byCode['graphql']['shortcode_media']['owner']['profile_pic_url'];
-                $byPost['user_name'] = $byCode['graphql']['shortcode_media']['owner']['username'];
-                $byPost['taken_at'] = $byCode['graphql']['shortcode_media']['taken_at_timestamp'];
-                $byPost['taken_at'] = date("Y-m-d H:i:s", substr($byPost['taken_at'], 0, 10));
-                if($node['is_video']){
-                    $byPost['img_url'] = $byCode['graphql']['shortcode_media']['video_url'];
+                    $byPost['user_photo'] = $byCode['graphql']['shortcode_media']['owner']['profile_pic_url'];
+                    $byPost['user_name'] = $byCode['graphql']['shortcode_media']['owner']['username'];
+                    $byPost['taken_at'] = $byCode['graphql']['shortcode_media']['taken_at_timestamp'];
+                    $byPost['taken_at'] = date("Y-m-d H:i:s", substr($byPost['taken_at'], 0, 10));
+                    if($node['is_video']){
+                        $byPost['img_url'] = $byCode['graphql']['shortcode_media']['video_url'];
+                    }
+                    else{
+                        $byPost['img_url'] = $byCode['graphql']['shortcode_media']['display_url'];
+                    }
+
+                    $existPost = InstagramPost::where('code', '=', ($node['shortcode']))->first();
+
+                    if($existPost){
+                        self::updateIgPost($existPost, $byPost,$node);
+                    }
+                    else{
+                        self::saveIgPost($node, $byPost);
+                    }
+
+                    $i++;
                 }
-                else{
-                    $byPost['img_url'] = $byCode['graphql']['shortcode_media']['display_url'];
-                }
-
-                $existPost = InstagramPost::where('code', '=', ($node['shortcode']))->first();
-
-                if($existPost){
-                    self::updateIgPost($existPost, $byPost,$node);
-                }
-                else{
-                    self::saveIgPost($node, $byPost);
-                }
-
-                $i++;
             }
         }
+        self::fetchSpecificPostByCode('BhDi_XDhQtz');
 
+    }
 
+    static function fetchSpecificPostByCode($code){
+        $byCode = self::fetch_instagram_post($code);
+
+        $node['shortcode'] = $byCode['graphql']['shortcode_media']['shortcode'];
+        $node['owner']['id'] = $byCode['graphql']['shortcode_media']['owner']['id'];
+        $byPost['user_photo'] = $byCode['graphql']['shortcode_media']['owner']['profile_pic_url'];
+        $node['is_video'] = $byCode['graphql']['shortcode_media']['is_video'];
+        $node['edge_liked_by']['count'] = $byCode['graphql']['shortcode_media']['edge_media_preview_like']['count'];
+        $node['edge_media_to_caption']['edges'][0]['node']['text'] = $byCode['graphql']['shortcode_media']['edge_media_to_caption']['edges'][0]['node']['text'];
+
+        $byPost['user_photo'] = $byCode['graphql']['shortcode_media']['owner']['profile_pic_url'];
+        $byPost['user_name'] = $byCode['graphql']['shortcode_media']['owner']['username'];
+        $byPost['taken_at'] = $byCode['graphql']['shortcode_media']['taken_at_timestamp'];
+        $byPost['taken_at'] = date("Y-m-d H:i:s", substr($byPost['taken_at'], 0, 10));
+        if($node['is_video']){
+            $byPost['img_url'] = $byCode['graphql']['shortcode_media']['video_url'];
+        }
+        else{
+            $byPost['img_url'] = $byCode['graphql']['shortcode_media']['display_url'];
         }
 
+        $existPost = InstagramPost::where('code', '=', ($node['shortcode']))->first();
+
+        if($existPost){
+            self::updateIgPost($existPost, $byPost,$node);
+        }
+        else{
+            self::saveIgPost($node, $byPost);
+        }
     }
 
     static function fetch_instagram_post($post_id) {

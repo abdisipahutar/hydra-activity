@@ -26,7 +26,7 @@
 						@elseif($row->is_video)
 							<td>
 								<div class="video-container">
-									<video controls autoplay loop>
+									<video controls autoplay loop muted>
 									  <source width="100%;" src="{{ $row->images }}" type="video/mp4">
 									  Your browser does not support the video tag.
 									</video>

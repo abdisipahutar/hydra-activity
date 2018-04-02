@@ -46,7 +46,7 @@
 	<div class="row col-md-8 col-md-offset-2 step-text-wrapper boomerang-step">
 		<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin step-3-tit-mobile">3</div>
 		<div class="col-md-9 col-xs-9 text-2 text-left inline-midle">
-			Upload video Boomerang kreasimu di Instagram dengan Hastag #4stepsXBoomerang, tag &amp; mention akun resmi <a class="soc-med-link" href="https://www.instagram.com/id.oriflame" target="_blank">Instagram Oriflame</a>, tag 3 teman kamu yang lain ajak mereka untuk join di Kompetisi ini, dan sertakan website <a class="soc-med-link" href="http://www.oriflame4stepsroutine.com">www.oriflame4stepsroutine.com</a> dalam caption kamu.
+			Upload video Boomerang kreasimu di Instagram dengan Hastag #4stepsXBoomerang, tag &amp; mention akun resmi <a class="soc-med-link" href="https://www.instagram.com/id.oriflame" target="_blank">Instagram Oriflame</a> dan tag juga 3 teman kamu yang lain ajak mereka untuk join di Kompetisi ini
 		</div>
 	</div>
 	<div class="col-md-8 col-md-offset-2 step-text-wrapper step-min-margin">

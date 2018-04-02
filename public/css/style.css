@@ -304,8 +304,9 @@ button:visited, button:hover, button:active {outline: none;}
 .step-min-half-margin{margin-top: -40px;}
 
 .video-container video {
-  pointer-events: none;
+  /*pointer-events: none;*/
   width: 100.5%;
+  /*touch-action: none;*/
 
 }
 
@@ -380,8 +381,6 @@ img.love-icon {
 }
 
 .modal-footer button.btn{color: #000;}
-
-
 
 @media screen and (max-width: 1000px){
 	.row{margin-left: 0px; margin-right: 0px;}

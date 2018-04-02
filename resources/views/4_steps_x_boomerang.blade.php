@@ -19,25 +19,25 @@
 	</div>
 	<div class="row item-wrapper step-min-half-margin">
 		<div class="item-container video-container">
-			<video controls autoplay loop>
+			<video controls autoplay loop playsinline>
 			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-02-21 at 2.10.11 PM.mp4') }}" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>
 		</div>
 		<div class="item-container video-container even-container">
-			<video controls autoplay loop>
+			<video controls autoplay loop playsinline>
 			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-04-02 at 6.53.54 AM.mp4') }}" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>
 		</div>
 		<div class="item-container video-container">
-			<video controls autoplay loop>
+			<video controls autoplay loop playsinline>
 			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-02-21 at 2.11.38 PM.mp4') }}" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>
 		</div>
         <div class="item-container video-container">
-			<video controls autoplay loop>
+			<video controls autoplay loop playsinline>
 			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-04-02 at 6.54.04 AM.mp4') }}" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>

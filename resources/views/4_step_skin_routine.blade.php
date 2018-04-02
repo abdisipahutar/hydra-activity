@@ -9,7 +9,7 @@
 	<div class="col-md-8 col-xs-12 col-md-offset-2 text-2">Seringkali kita abai merawat kulit dan lebih memprioritaskan hal lainya. Padahal, kulit adalah perisai utama untuk melindungi organ tubuh lainnya dan menjadi hal pertama yang terlihat pada penampilan kita, sehingga perawatan rutin yang tepat dan efektif sangatlah penting. Kunci dari kulit segar dan cantik adalah merawatnya dengan benar sesuai kebutuhannya. Karenanya, berinvestasi pada rutinitas perawatan kulit yang tepat dapat kami jamin merupakan salah satu keputusan terbaik untuk hidup yang berkualitas dan masa depan yang lebih bersinar. Mari simak langkah-lagkahnya:</div>
 	
 	<div class="row col-md-10 col-xs-12 col-md-offset-1 step-wrapper">
-		<div class="col-md-6 col-xs-12">
+		<div class="col-md-5 col-md-offset-1 col-xs-12">
 			<img class="web" width="100%" src="{{ asset('img/Pembersih-dan-Toner-1.png') }}">
 			<img class="mobile" width="100%" src="{{ asset('img/Pembersih-dan-Toner-mobile.png') }}">
 		</div>
@@ -47,8 +47,8 @@
 			<div class="blue-bar"></div>
 			<span class="text-3 step-title-text">LANGKAH 2</span>
 		</div>
-		<div class="web" style="margin-top: 45px;">
-			<img width="100%" src="{{ asset('img/MATA-1.png') }}">
+		<div class="web" style="margin-top: 45px; text-align: center;">
+			<img width="60%" src="{{ asset('img/MATA-1.png') }}">
 		</div>
 		<div class="mobile">
 			<img class="mobile" width="100%" src="{{ asset('img/MATA-mobile.png') }}">
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 		<div class="col-md-6 web" style="z-index: 9;">
-			<img width="100%" src="{{ asset('img/boost-1.png') }}">
+			<img width="80%" src="{{ asset('img/boost-1.png') }}">
 		</div>
 		<div class="mobile">
 			<img class="mobile" width="100%" src="{{ asset('img/Boost-mobile.png') }}" style="margin-top: 20px;">
@@ -104,11 +104,11 @@
 			<div class="blue-bar"></div>
 			<span class="text-3 step-title-text">LANGKAH 4</span>
 		</div>
-		<div style="margin-top: 45px;" class="web">
-			<img width="100%" src="{{ asset('img/pelembab1.png') }}">
+		<div style="margin-top: 45px;text-align: center;" class="web">
+			<img width="60%" src="{{ asset('img/pelembap-update.png') }}">
 		</div>
 		<div class="mobile">
-			<img class="mobile" width="100%" src="{{ asset('img/pelembab-mobile.png') }}" style="margin-top: 20px;">
+			<img class="mobile" width="100%" src="{{ asset('img/pelembap-mobile-update.png') }}" style="margin-top: 20px;">
 		</div>
 		<div class="col-md-8 col-md-offset-2 step-text-wrapper">
 			<div class="text-4"><center>PELEMBAP </center></div>

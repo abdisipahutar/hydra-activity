@@ -19,7 +19,7 @@
 				foreach ($posts as $post) { ?>
 					<div class="item-container video-container {{$i%2==0 ? '' : ''}}">
 						@if($post->is_video)
-							<video controls="" autoplay="" loop="" playsinline>
+							<video controls="" autoplay="" loop="" playsinline muted>
 							  <source width="100%;" src="{{$post->images}}" type="video/mp4">
 							  Your browser does not support the video tag.
 							</video>

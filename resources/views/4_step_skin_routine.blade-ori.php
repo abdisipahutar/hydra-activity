@@ -2,11 +2,7 @@
 
 @section('content')
 	<div class="col-md-8 col col-xs-12 col-md-offset-2 text-1">4 LANGKAH PERAWATAN RUTIN<br>KECANTIKAN KULIT - MENGAPA ANDA<br>MEMBUTUHKANNYA?</div>
-    <br/><br/>
-    <div style="text-align:center;">
-    <iframe style="padding:30px;" width="800" height="450" src="https://www.youtube.com/embed/7V7kcT2BO-E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	<div class="col-md-8 col-xs-12 col-md-offset-2 text-2">Seringkali kita abai merawat kulit dan lebih memprioritaskan hal lainya. Padahal, kulit adalah perisai utama untuk melindungi organ tubuh lainnya dan menjadi hal pertama yang terlihat pada penampilan kita, sehingga perawatan rutin yang tepat dan efektif sangatlah penting. Kunci dari kulit segar dan cantik adalah merawatnya dengan benar sesuai kebutuhannya. Karenanya, berinvestasi pada rutinitas perawatan kulit yang tepat dapat kami jamin merupakan salah satu keputusan terbaik untuk hidup yang berkualitas dan masa depan yang lebih bersinar. Mari simak langkah-lagkahnya:</div>
+	<div class="col-md-8 col-xs-12 col-md-offset-2 text-2">Seringkali kita abai merawat kulit dan lebih memprioritaskan hal lainya. Padahal, kulit adalah perisai utama untuk melindungi orangn tubul lainnya dan menjadi hal pertama yang terlihat pada penampilan kita, sehingga perawatan rutin yang tepat dan efektif sangatlah penting. Kunci dari kulit segar dan cantik adalah merawatnya dengan benar sesuai kebutuhannya. Karenanya, berinvestasi pada rutinitas perawatan kulit yang tepat dapat kami jamin merupakan salah satu keputusan terbaik untuk hidup yang berkualitas dan masa depan yang lebih bersinar. Mari simak langkah-lagkahnya:</div>
 	
 	<div class="row col-md-10 col-xs-12 col-md-offset-1 step-wrapper">
 		<div class="col-md-6 col-xs-12">
@@ -120,10 +116,10 @@
 		</div>
 		<div class="col-md-8 col-md-offset-2 step-text-wrapper">
 			<div class="text-4"><center>MENGAPA KRIM MALAM?</center></div>
-			<div class="text-2">Krim malam yang kaya memberikan kulit nutrisi ekstra. Seperti halnya tubuh Anda, regenerasi sel kulit berada dipuncak saat kulit beristirahat di malam hari, oleh sebab itu mengoptimalkan proses pembaharuan alami kulit alami dengan bantuan krim malam adalah proses yang pantang Anda lewatkan.</div>
+			<div class="text-2">Krim malam yang kaya memberikan kulit nutrisi ekstra. Seperti halanya tubuh Anda, regenerasi sel kulit berada dipuncak saat kulit beristirahat di malam hari, oleh sebab itu mengoptimalkan proses pembaharuan alami kulit alami dengan bantuan krim malam adalah proses yang pantang Anda lewatkan.</div>
 		</div>
 		<div class="col-md-8 col-md-offset-2 step-text-wrapper">
-			<div class="text-5"><center>Jadi, mari berinvestasi sedini mungkin dengan rutin merawat kulit mulai sekarang, untuk hari esok yang lebih bersinar!</center></div>
+			<div class="text-5"><center>Jadi, mari berinvestasi sedini mungkin dengan rutin merawat kulit mulai sekarag, untuk hari esok yang lebih bersinar!</center></div>
 		</div>
 	</div>
 @stop

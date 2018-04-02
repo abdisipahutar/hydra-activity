@@ -13,7 +13,7 @@
 
 	<div class="col-md-8 col-md-offset-2 step-text-wrapper step-min-margin">
 		<div class="col-md-9 col-xs-9 text-2 text-right inline-midle">
-			Buat video <span style="font-weight: bolder;">boomerang</span> sekreatif mungkin dengan menunjukkan salah satu gerakan 4 langkah perawatan wajah
+			Buat video <span style="font-weight: bolder;">boomerang</span> sekreatif mungkin dengan menunjukkan salah satu gerakan 4 langkah perawatan wajah dan menampilkan produk Skin Care oriflame
 		</div>
 		<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin">2</div>
 	</div>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="item-container video-container even-container">
 			<video controls autoplay loop>
-			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-04-02 at 6.53.54 AM.mp4') }}" type="video/mp4">
+			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-02-21 at 2.10.26 PM.mp4') }}" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>
 		</div>
@@ -36,26 +36,25 @@
 			  Your browser does not support the video tag.
 			</video>
 		</div>
-        <div class="item-container video-container">
-			<video controls autoplay loop>
-			  <source width="100%;" src="{{ asset('img/WhatsApp Video 2018-04-02 at 6.54.04 AM.mp4') }}" type="video/mp4">
-			  Your browser does not support the video tag.
-			</video>
-		</div>
 	</div>
 	<div class="row col-md-8 col-md-offset-2 step-text-wrapper boomerang-step">
 		<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin step-3-tit-mobile">3</div>
 		<div class="col-md-9 col-xs-9 text-2 text-left inline-midle">
-			Upload video Boomerang kreasimu di Instagram dengan Hastag #4stepsXBoomerang, tag &amp; mention akun resmi <a class="soc-med-link" href="https://www.instagram.com/id.oriflame" target="_blank">Instagram Oriflame</a> dan tag juga 3 teman kamu yang lain ajak mereka untuk join di Kompetisi ini
+			Upload video Boomerang kreasimu di Facebook & Instagram dengan Hastag #4stepsXBoomerang, tag & mention akun resmi <a class="soc-med-link" href="https://www.instagram.com/id.oriflame" target="_blank">Instagram Oriflame</a> dan akun resmi <a class="soc-med-link" href="https://www.facebook.com/id.oriflame" target="_blank">Facebook Oriflame</a> dan tag juga 3 teman kamu yang lain ajak mereka untuk join di Kompetisi ini
 		</div>
 	</div>
 	<div class="col-md-8 col-md-offset-2 step-text-wrapper step-min-margin">
 		<div class="col-md-9 col-xs-9 text-2 text-right inline-midle">
-			Periode kontes 2 – 30 April 2018
+			Kirimkan bukti pembelian produk Skin Care Oriflame & URL Link video boomerang kreasimu ke <a class="soc-med-link" href="mailto:selamatpagi@oriflame.com">selamatpagi@oriflame.com</a> dengan subject: #4stepsXBoomerang
 		</div>
 		<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin">4</div>
 	</div>
-	
+	<div class="row col-md-8 col-md-offset-2 step-text-wrapper boomerang-step step-min-margin step-5">
+		<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin">5</div>
+		<div class="col-md-9 col-xs-9 text-2 text-left inline-midle">
+			Periode kontes 1 – 30 April 2018
+		</div>
+	</div>
 	<div class="col-md-8 col-md-offset-2 step-text-wrapper blue-backgroud">
 		<div class="col-md-8 col-md-offset-2 text-1 white-color">KETENTUAN PEMENANG</div>
 		<div class="col-md-12 step-text-wrapper">
@@ -80,13 +79,11 @@
 				</div>
 			</div>
 		</div>
-        <!--
 		<div class="col-md-12 step-text-wrapper step-min-margin">
 			<div class="col-md-8 col-xs-8 text-2 text-right inline-midle white-color">
 				Bagi pemenang yang berasal dari luar Jabodetabek akan mendapatkan tiket pesawat PP & menginap di Hotel Berbintang selama 1 malam
 			</div>
 			<div class="col-md-2 col-xs-2 text-10 text-right inline-midle step-min-margin white-color">4</div>
 		</div>
-        -->
 	</div>
 @stop

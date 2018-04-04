@@ -385,7 +385,7 @@ img.love-icon {
 #load-more{
 	font-family: OriflameSansRegular;
     background: #87bce6;
-    padding: 10px 20px;
+    padding: 10px 50px;
     font-size: 20px;
     border-radius: 30px;
     color: #fff;
@@ -562,4 +562,5 @@ img.love-icon {
 	    padding-bottom: 14px;
 	    margin-bottom: 40px;
 	}
+	#load-more{font-size: 80px; }
 }

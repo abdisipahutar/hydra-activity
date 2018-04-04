@@ -27,6 +27,8 @@ Route::get('/skin-care-sets', ['as' => 'skin-care-sets', 'uses' => 'StaticPageCo
 Route::get('/4-steps-x-boomerang', ['as' => '4-steps-x-boomerang', 'uses' => 'StaticPageController@get4StepXBoomerang']);
 Route::get('/4-steps-x-boomerang-challenger', ['as' => '4-steps-x-boomerang-challenger', 'uses' => 'StaticPageController@get4StepXBoomerangChallenger']);
 
+Route::post('/get-ig-post', ['as' => 'getIgPost', 'uses' => 'StaticPageController@getIgPost']);
+
 // Route::get('/', function () {
 //     return view('index');
 // });

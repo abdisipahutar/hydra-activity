@@ -382,6 +382,20 @@ img.love-icon {
 
 .modal-footer button.btn{color: #000;}
 
+#load-more{
+	font-family: OriflameSansRegular;
+    background: #87bce6;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#load-more:hover, #load-more:visited, #load-more:hover, #load-more:active{outline: none;}
+
 @media screen and (max-width: 1000px){
 	.row{margin-left: 0px; margin-right: 0px;}
 	.web{display: none;}

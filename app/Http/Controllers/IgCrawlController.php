@@ -17,7 +17,7 @@ class IgCrawController extends BaseController{
 
 	public function getPostToAdm(Request $request){
 
-		$elq = InstagramPost::where('is_approved', '=', $request->status)->orderBy('taken_at', 'desc');
+		$elq = InstagramPost::where('is_approved', '=', $request->status)->orderBy('likes', 'desc')->orderBy('taken_at', 'desc');
 
 		$data['data'] = $elq->paginate(10);
 

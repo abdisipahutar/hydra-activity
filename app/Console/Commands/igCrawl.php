@@ -184,24 +184,4 @@ class igCrawl extends Command
 
         return $result;
 }
-
-    static function curl_get($url) {
-        $ch = curl_init();
-
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_COOKIE, self::cookie());
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2709.0 Safari/537.36");
-        
-        $rs = curl_exec ($ch);
-        
-        curl_close ($ch);
-
-        return $rs; 
-    }
-
-    static function cookie(){
-        return 'rur=FTW; mid=WrTN5gAEAAFSpLQ-j0e2ZQauPot-; ig_vw=1280; ig_pr=2; ig_vh=612; csrftoken=xewnwEkVO3uvTlCHggqMLMAdH4mLzkBa; ds_user_id=1747115494; sessionid=IGSC7f754cc78bc5118c44c659c2ada67d6772696aab8e9d0d6b4abe8cf9b51821a0%3Aab4aguigDvvbsgzlxbSdQE5colXh8eJ5%3A%7B%22_auth_user_id%22%3A1747115494%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%221747115494%3AlcUvbPaxFUGUDUDUqII0fYynO1UQBtwi%3A579c6fde93a48af9da9f600d5e6ecaa79a866902d61ee8158eda0dab40fa290b%22%2C%22last_refreshed%22%3A1521798645.6064145565%7D; ig_or=landscape-primary; urlgen="{\"time\": 1521798645\054 \"175.158.55.101\": 135478}:1ezJLb:k30eavjhWfwygiQrekBywDr2q7E"';
-    }
 }

@@ -185,4 +185,19 @@ class igCrawl extends Command
         return $result;
 }
 
+    static function curl_get($url) {
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_COOKIE, self::cookie());
+        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2709.0 Safari/537.36");
+        
+        $rs = curl_exec ($ch);
+        
+        curl_close ($ch);
+
+        return $rs; 
+    }
 }
